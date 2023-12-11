@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: window-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -31,7 +31,7 @@ jobs:
 
     - name: Create CML report
       env:
-        REPO_TOKEN: ${{ secrets.ci_cd }}
+        REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
 
         echo "# First Line of our report" >> report.md
