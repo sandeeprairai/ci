@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 fig, ax = plt.subplots()
 
@@ -25,3 +26,11 @@ ax.plot(activity, cat, label="cat")
 ax.legend()
 
 plt.savefig('lines.png', bbox_inches='tight')
+
+
+y = np.array([35, 25, 25, 15])
+
+plt.pie(y)
+plt.show() 
+
+plt.savefig('pie.png', bbox_inches='tight')

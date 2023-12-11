@@ -39,5 +39,8 @@ jobs:
         echo '![](./bars.png "Bar plot")' >> report.md
         echo "## Line Plots" >> report.md
         echo '![](./lines.png "Bar plot")' >> report.md
+        echo "## Pie Chart" >> report.md
+        echo '![](./pie.png "Pie chart")' >> report.md
+
 
         cml comment create report.md
