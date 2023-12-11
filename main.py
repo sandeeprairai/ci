@@ -34,3 +34,10 @@ plt.pie(y)
 plt.show() 
 
 plt.savefig('pie.png', bbox_inches='tight')
+
+
+x = np.array([1, 2, 3, 4])  # X-axis points 
+y = x*2  # Y-axis points 
+  
+plt.plot(x, y)  # Plot the chart 
+plt.savefig('line.png',bbox_inches='tight')
